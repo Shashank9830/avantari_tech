@@ -36,9 +36,9 @@ This can used to quickly see how final solution notebook execution looks like. U
 ## Understanding final cell output
 After execution of all cells, the final cell output should be like this:
 
-![10 images similar to 46.jpg](/Sample outputs/img1.jpg?raw=true "DEFAULT mode output") 
+![10 images similar to 46.jpg](https://github.com/Shashank9830/avantari_tech/blob/master/Sample%20outputs/img1.PNG "DEFAULT mode output")
 
-![10 images similar to image 397](/Sample outputs/img2.jpg?raw=true "CACHED mode output")
+![10 images similar to image 397](https://github.com/Shashank9830/avantari_tech/blob/master/Sample%20outputs/img1.PNG "CACHED mode output")
 
 * Image in the first row in the **input image**.
 * Images in the subsequent rows are **similar images** ranked in order of decreasing similarity.
