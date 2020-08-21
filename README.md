@@ -65,7 +65,7 @@ Refer **README.pdf** for detailed explanation of the approach used to find N sim
 | 11 | get\_similarity\.ipynb          | Jupyter Notebook | Code to find similarity of all the images with each other\.                                        |
 | 12 | cosine\_similarity\_matrix\.npy | NumPy file       | Cosine similarity matrix generated in the previous step\.                                          |
 | 13 | sim\_mat\_sorted\.json          | JSON file        | Images sorted in decreasing order of similarity to each other\.                                    |
-| **14** | **final\_solution\.ipynb**          | **Jupyter Notebook | Main user notebook\. Run this for final output\.**                                                   |
+| **14** | **final\_solution\.ipynb**          | **Jupyter Notebook** | **Main user notebook\. Run this for final output\.**                                                   |
 | 15 | Sample outputs                  | Directory        | Some pre\-executed notebook outputs in HTML format\. One example of both cached and default mode\. |
 | 16 | k\_grouping\.py                 | Python script    | Code to implement Elbow and K\-medoids algorithm\.                                                 |
 | 17 | k\_groups\.json                 | JSON file        | JSON file containing list of medoids and clusters                                                  |
