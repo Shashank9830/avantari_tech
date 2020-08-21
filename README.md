@@ -1,6 +1,6 @@
 # Avantari Technologies - Machine Learning Task Solution
 
-Creating an AutoEncoder model for finding similar images and partitioning the dataset into K groups.
+Creating an **AutoEncoder** model for finding similar images and partitioning the dataset into K groups.
 
 For detailed explanation please refer **README.pdf**.
 
@@ -8,14 +8,14 @@ For detailed explanation please refer **README.pdf**.
 
 ![10 images similar to 46.jpg](https://github.com/Shashank9830/avantari_tech/blob/master/Sample%20outputs/img1.PNG "DEFAULT mode output")
 
-The output from two different executions of the final solution notebook (**final_solution.ipynb**) is saved in HTML format for quick  viewing.
+The outputs from two different executions of the final solution notebook (**final_solution.ipynb**) is saved in HTML format for quick  viewing.
 
 Please see the following files present inside **"Sample outputs"** directory:
 
 * **final_solution_1_default.html**
 * **final_solution_2_cached.html**
 
-This can used to quickly see how final solution notebook execution looks like. Use this in case **final_solution.ipynb** fails to execute on your system for some reason.
+This can be used to quickly see how final solution notebook execution looks like. Use this in case **final_solution.ipynb** fails to execute on your system for some reason.
 
 ## Requirements to execute *final_solution.ipynb* on your own
 
@@ -47,3 +47,32 @@ After execution of all cells, the final cell output should be like this:
 ## Solution details
 
 Refer **README.pdf** for detailed explanation of the approach used to find N similar images and to partition the dataset into K-groups.
+
+## File(s)
+
+|    | Filename                        | Type             | Information                                                                                        |
+|----|---------------------------------|------------------|----------------------------------------------------------------------------------------------------|
+| 1  | dataset                         | Directory        | Original dataset\.                                                                                 |
+| 2  | resize\_dataset\.py             | Python script    | Resizes the dataset images to 256x256\.                                                            |
+| 3  | resized\_256                    | Directory        | Resized dataset\.                                                                                  |
+| 4  | create\_autoencoder\.py         | Python script    | Creates an autoencoder model\.                                                                     |
+| 5  | autoencoder\.h5                 | H5 file          | AutoEncoder model saved in H5 format\.                                                             |
+| 6  | trainer\_notebook\.ipynb        | Jupyter Notebook | Model training code\.                                                                              |
+| 7  | trained\_autoencoder\.h5        | H5 file          | Trained autoencoder saved in H5 format\.                                                           |
+| 8  | trained\_encoder\.h5            | H5 file          | Encoder part of the trained autoencoder\.                                                          |
+| 9  | get\_encodings\.ipynb           | Jupyter Notebook | Code to get the encodings of all the images\.                                                      |
+| 10 | encodings\.npy                  | NumPy file       | Encodings of all 4738 images\.                                                                     |
+| 11 | get\_similarity\.ipynb          | Jupyter Notebook | Code to find similarity of all the images with each other\.                                        |
+| 12 | cosine\_similarity\_matrix\.npy | NumPy file       | Cosine similarity matrix generated in the previous step\.                                          |
+| 13 | sim\_mat\_sorted\.json          | JSON file        | Images sorted in decreasing order of similarity to each other\.                                    |
+| 14 | final\_solution\.ipynb          | Jupyter Notebook | Main user notebook\. Run this for final output\.                                                   |
+| 15 | Sample outputs                  | Directory        | Some pre\-executed notebook outputs in HTML format\. One example of both cached and default mode\. |
+| 16 | k\_grouping\.py                 | Python script    | Code to implement Elbow and K\-medoids algorithm\.                                                 |
+| 17 | k\_groups\.json                 | JSON file        | JSON file containing list of medoids and clusters                                                  |
+| 18 | partition\_dataset\.py          | Python script    | Code to partition the dataset as mentioned in the above JSON file                                  |
+| 19 | K Groups                        | Directory        | Folder containing K\-Groups                                                                        |
+| 20 | \.ipynb\_checkpoints            | \-\-\-           | \-\-\-                                                                                             |
+
+## Authors
+
+* **Shashank Singh** - *Complete work* - [shashank9830](https://github.com/shashank9830)
